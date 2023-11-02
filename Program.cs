@@ -108,14 +108,14 @@ namespace ISharp
             SortAsc();
 
             int temp;
-            int n = array.Length; 
-            int j = n / 2;          
 
-            for (int i = 0; i < j; i++)
+            int mid = array.Length / 2;          
+
+            for (int i = 0; i < mid; i++)
             {
                 temp = array[i];
-                array[i] = array[n - i - 1];
-                array[n - i - 1] = temp;
+                array[i] = array[array.Length - i - 1];
+                array[array.Length - i - 1] = temp;
             }
         }
 
